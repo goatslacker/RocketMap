@@ -2301,6 +2301,7 @@ def parse_gyms(args, gym_responses, wh_update_queue, db_update_queue):
                         'individual_attack', 0),
                     'trainer_name': member['trainer_public_profile']['name'],
                     'trainer_level': member['trainer_public_profile']['level'],
+                    'nickname': member['pokemon_data'].get('nickname'),
                 })
 
             i += 1
